@@ -1,0 +1,121 @@
+header {
+	background-color: #964b00;
+}
+
+.caixa{
+    
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo__branco{
+    height: 220px;
+    width: 220px;
+}
+nav {
+    position: absolute;
+    top:110px;
+    right: 100px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:black;
+    text-decoration: underline;
+}
+.produtos{
+    width: 940px;
+    margin: 25px auto;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1%;
+    padding: 30px 20px 
+    border-box;
+    border: #000000 3px solid;
+    border-top-width: 10px;
+    border-end-start-radius:20px;
+    border-end-end-radius:20px;
+}
+
+.produtos li:hover{
+    border-color: black;
+}
+.produtos li:active{
+    border: #000000 solid 3px;
+}
+
+.produtos li:hover h2{
+    font-size: 25px;
+}
+.produtos h2{  
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao-prod{
+    color: #000000;
+    font-size: 20px;    
+}
+
+.preco-produto{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0 0  ;
+}
+
+
+footer {
+    text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 65px 0;
+}
+
+    /* FORMULARIO DE CADASTRO */
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+form input {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
