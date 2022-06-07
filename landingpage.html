@@ -2,16 +2,18 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Home - Barbearia Alura</title>
+        <title lang="en">Home - Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style__home.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="stylesheet">
     </head>
-
+    
     <body>
-        <body>
-            <header>
-                <div class="caixa">
-                    <h1><img class="logo__branco" src="logo-branco.png"></h1>
+        <header>
+            <div class="caixa">
+                <h1><img class="logo__branco" src="logo-branco.png"></h1>
                     <nav>
                         <ul>
                             <li><a href="landingpage.html">Home</a></li>
@@ -21,11 +23,13 @@
                     </nav>
                 </div>
             </header>
-
+            <img class="banner" src="banner.jpg" alt="">
         <main>
-            <div class = "principal">
-                <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
-
+            <section class = "principal">
+                <h2 class="titulo__principal">Sobre a Barbearia Alura</h2>
+                
+                <img class="utencilhos" src="utemcilhos.jpg" alt="utencilhos de barbearia">
+                
                 <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba.</p> 
                 
                 <p>Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
@@ -34,18 +38,38 @@
 
                 <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. 
                 O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-            </div>
-            
-            <div class = "Beneficios">
-                <h2 class="titulo-centralizado2">Beneficios</h2>
-                <ul>
-                    <li class="item-beneficio">Atendimento ao clientes</li>
-                    <li class="item-beneficio">Espaço diferenciado</li>
-                    <li class="item-beneficio">Localização</li>
-                    <li class="item-beneficio">profissionais qualificados</li>
-                </ul>
-                <img src="beneficios.jpg" class="img-beneficios">
-            </div>
+            </section>
+
+            <section class="Mapa">
+                <h3 class="titulo__principal"> Onde estamos Localizado? </h3>
+                <p>Nosso estabelecimento esta Localizado aqui venha nos fazer uma visita</p>
+                
+                <div class="Mapa__conteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9121760059015!2d-59.9951786858883!3d-3.1179323412443836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926c053d197294d7%3A0x132e44bf2d2dbef8!2sLanche%20do%20Arilson!5e0!3m2!1spt-BR!2sbr!4v1654624841933!5m2!1spt-BR!2sbr" 
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class = "Beneficios">
+                <h2 class="titulo__principal">Beneficios</h2>
+                <div class="conteudo__lista">
+                    <ul class="lista__beneficios">
+                        <li class="item__beneficio">Atendimento ao clientes</li>
+                        <li class="item__beneficio">Espaço diferenciado</li>
+                        <li class="item__beneficio">Localização</li>
+                        <li class="item__beneficio">Profissionais qualificados</li>
+                        <li class="item__beneficio">Pontualidade</li>
+                        <li class="item__beneficio">Limpeza</li>
+                    </ul><img src="beneficios.jpg" class="img__beneficios">
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+
+                </div>
+            </section>
         </main>
 
         <footer>

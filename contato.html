@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Produtos - Barbearia Alura</title>
+        <title>Contato - Barbearia Alura</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="logo-branco.png"></h1>
+                <h1><img class="logo__branco" src="logo-branco.png" alt="lobo da barbearia alura na cor branca"></h1>
                 <nav>
                     <ul>
                         <li><a href="landingpage.html">Home</a></li>
@@ -21,37 +21,68 @@
             </div>
         </header>
 
-        <main>
+        <main class="contato">
             <form >
                 <label for="NomeSobrenome">Nome e Sobrenome</label>
-                <input type="text" id="NomeSobrenome">
+                <input type="text" id="NomeSobrenome" class="input-padrao" required>
 
                 <label for="Email">Email</label>
-                <input type="text" id="Email">
+                <input type="email" id="Email" class="input-padrao" required placeholder="nome@dominio.com">
 
                 <label for="Telefone">Celular </label>
-                <input type="text" id="Telefone">
+                <input type="tel" id="Telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
                 
                 <label for="mensagem">Mensagem</label>
-                <textarea name="" id="" cols="50" rows="10" itemid="Mensagem"></textarea>
+                <textarea name="" id="" cols="70" rows="10" itemid="Mensagem"></textarea required>
 
-                <div>
-                    <label for="radio__Email">E-mail</label>
-                    <input type="radio" name="contato" value="radio__Email">
+                <fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
 
-                    <label for="radio__Telefone">Telefone</label>
-                    <input type="radio" name="contato" value="radio__Telefone">
 
-                    <label for="radio__WhatsApp">WhatsApp</label>
-                    <input type="radio" name="contato" value="radio__WhatsApp">
-                </div>
-                <label><input type="checkbox">Gostaria de Receber nossos e-mails promocionais?</label>
-                <input type="submit" value="Enviar pergunta ">
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked >Gostaria de Receber nossos e-mails promocionais?</label>
+                <input class="enviar" type="submit" value="Enviar pergunta ">
             </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </main>
 
         <footer>
-            <img src="logo-branco.png">
+            <img src="logo-branco.png" alt="lobo da barbearia alura na cor branca">
             <p class="copyright">&copy; copyright Barbearia Alura - 2022</p>
         </footer>
     </body>
